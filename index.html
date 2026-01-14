@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Science Journey</title>
+    <title>Raghav's Place</title>
     <style>
-        /* This section makes the website look good (CSS) */
+        /* CSS: Making things look good */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -13,75 +13,106 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #fdfdfd;
         }
         header {
             text-align: center;
             padding-bottom: 40px;
-            border-bottom: 2px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
             margin-bottom: 40px;
+            background: linear-gradient(to bottom, #fdfdfd, #f4f4f4);
+            padding-top: 20px;
+            border-radius: 0 0 20px 20px;
         }
-        h1 { color: #2c3e50; }
-        h2 { color: #2980b9; border-left: 5px solid #2980b9; padding-left: 10px; margin-top: 40px;}
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            object-fit: cover; /* Ensures the face isn't stretched */
+            border-radius: 50%; /* Makes it a perfect circle */
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        h1 { 
+            color: #2c3e50; 
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #555;
+            font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h2 { 
+            color: #d35400; /* A nice burnt orange color */
+            border-left: 5px solid #d35400; 
+            padding-left: 15px; 
+            margin-top: 50px;
+        }
         .entry {
             background: white;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            border: 1px solid #eee;
         }
         .date {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            font-weight: bold;
+            color: #95a5a6;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
         }
         .tag {
-            background-color: #e1ecf4;
-            color: #2c3e50;
+            background-color: #fff0e6;
+            color: #d35400;
             padding: 2px 8px;
             border-radius: 4px;
             font-size: 0.8em;
             margin-left: 10px;
+            font-weight: bold;
         }
+        a { color: #d35400; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Science Log</h1>
-        <p><i>Unravelling doubtful concepts and explaining them to myself.</i></p>
+        <img src="profile.jpg" alt="Raghav Kapoor" class="profile-pic">
+        
+        <h1>Raghav's Place</h1>
+        
+        <div class="subtitle">
+            "Sincere in my efforts &bull; Honest in my language &bull; Amused in my mind"
+        </div>
     </header>
 
     <section>
-        <h2>Daily Thoughts (Stream)</h2>
+        <h2>Daily Thoughts</h2>
         
         <div class="entry">
-            <div class="date">January 9, 2026 <span class="tag">Physics</span></div>
-            <p><strong>Thought:</strong> I realized today that I often confuse "speed" with "velocity" when speaking casually. Speed is just the magnitude (scalar), but velocity needs a direction (vector). Explaining this to a friend made me realize how important the distinction is in kinematics.</p>
-        </div>
-
-        <div class="entry">
-            <div class="date">January 8, 2026 <span class="tag">Meta</span></div>
-            <p><strong>Thought:</strong> Decided to start this website. The "Protégé Effect" suggests that teaching others helps you learn. This is my attempt at that.</p>
+            <div class="date">January 14, 2026 <span class="tag">Introduction</span></div>
+            <p><strong>Topic: Starting Up</strong></p>
+            <p>I have decided to create this digital garden. As I study complex systems and fluid dynamics, I realize that explaining concepts to others is the best way to verify my own understanding. This space will serve as my public notebook.</p>
         </div>
     </section>
 
     <section>
-        <h2>Longer Articles (Garden)</h2>
+        <h2>Articles & Explanations</h2>
         
         <div class="entry">
-            <h3><a href="#">Understanding Entropy beyond "Disorder"</a></h3>
-            <p>A deeper look into statistical mechanics and why the "messy room" analogy fails...</p>
-        </div>
-
-        <div class="entry">
-            <h3><a href="#">My notes on Linear Algebra</a></h3>
-            <p>Why matrices are actually just transformations of space...</p>
+            <h3><a href="#">The Philosophy of Fluid Dynamics</a></h3>
+            <p>Why non-linear systems are more than just math...</p>
         </div>
     </section>
 
-    <footer style="text-align: center; margin-top: 50px; color: #aaa; font-size: 0.8em;">
-        <p>Created by Me</p>
+    <footer style="text-align: center; margin-top: 80px; color: #aaa; font-size: 0.8em; border-top: 1px solid #eee; padding-top: 20px;">
+        <p>&copy; 2026 Raghav Kapoor</p>
     </footer>
 
 </body>
